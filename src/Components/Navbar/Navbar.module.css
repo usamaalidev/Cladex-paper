@@ -1,0 +1,18 @@
+.nav {
+  background-color: var(--cp-bg-color);
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nav select {
+  width: fit-content;
+}
+
+.nav select:focus {
+  outline: 0;
+  box-shadow: none;
+}

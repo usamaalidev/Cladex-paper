@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+:root {
+  --cp-color-primary: #fafafa;
+  --cp-color-secondary: #ffc80a;
+  --cp-color-tertiary: #303030;
+  --cp-bg-color: #ffffff;
+  --cp-text-color: #000000;
+  --cp-text-primary: #594f43;
+  --cp-text-secondary: #777777;
+  --cp-inputPlaceholder-color: #777777;
+  --cp-darkText: #1a1a1a;
+  --cp-text-danger: #df2e38;
+  --cp-text-success: #82cd47;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo";
+  color: var(--cp-darkText);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure,
+blockquote,
+dl,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
