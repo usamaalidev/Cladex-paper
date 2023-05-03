@@ -1,0 +1,62 @@
+.circular-animation [class~="circle-lg"] {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-animation [class~="circle-lg"]::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../../assets/images/about/we-are-cladex.svg);
+  animation: circle-lg 11s infinite linear;
+}
+
+.circular-animation [class~="circle-sm"] {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circular-animation [class~="circle-sm"]::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../../assets/images/about/adjectives.svg);
+  animation: circle-sm 9s infinite linear;
+}
+
+.circular-animation img {
+  width: 40px;
+}
+
+@keyframes circle-lg {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes circle-sm {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}

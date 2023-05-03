@@ -1,26 +1,106 @@
 import style from "./Carosuel.module.css";
-import { register } from "swiper/element/bundle";
-register();
-import image_1 from "../../assets/images/carosuel/green-environment.jpg";
-import image_2 from "../../assets/images/carosuel/at-paper-making-factory.jpg";
-import image_3 from "../../assets/images/carosuel/cmyk-printing.jpg";
-
+import image_1 from "../../assets/images/carosuel/test.png";
+import image_2 from "../../assets/images/carosuel/test2.png";
+import { useTranslation } from "react-i18next";
 export default function Carosuel() {
+  const [t, i18n] = useTranslation();
   return (
     <>
-      <div className="vh-100">
-        <swiper-container effect="slide" pagination="true">
-          <swiper-slide>
-            {/* <img src={image_1} alt="" className={`${style["carosuel-img"]}`} /> */}
-            <h2>الصفحة الرئيسية</h2>
-          </swiper-slide>
-          <swiper-slide>
-            <img src={image_2} alt="" className={`${style["carosuel-img"]}`} />
-          </swiper-slide>
-          <swiper-slide>
-            <img src={image_3} alt="" className={`${style["carosuel-img"]}`} />
-          </swiper-slide>
-        </swiper-container>
+      <div id="home" className="carousel slide vh-100">
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#home"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#home"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#home"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div className="carousel-inner h-100">
+          <div
+            className={`carousel-item active ${style.item}`}
+            data-bs-interval="1000"
+          >
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-5">
+                  <h2 className="h1 fw-bold">
+                    {t("mainCarosuel", { returnObjects: true }).item1.title}
+                  </h2>
+                  <p className="lh-base text-muted">
+                    {
+                      t("mainCarosuel", { returnObjects: true }).item1
+                        .description
+                    }
+                  </p>
+                </div>
+                <div className="col-md-7">
+                  <img src={image_1} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`carousel-item ${style.item}`}
+            data-bs-interval="2000"
+          >
+            <div className="container">
+              <div className="row align-items-center justify-content-between">
+                <div className="col-md-5">
+                  <h2 className="h1 fw-bold">
+                    {t("mainCarosuel", { returnObjects: true }).item1.title}
+                  </h2>
+                  <p className="lh-base text-muted">
+                    {
+                      t("mainCarosuel", { returnObjects: true }).item1
+                        .description
+                    }
+                  </p>
+                </div>
+                <div className="col-md-6">
+                  <img src={image_2} alt="" />
+                </div>
+              </div>
+            </div>{" "}
+          </div>
+          <div className={`carousel-item ${style.item}`}>
+            <h2>image 3</h2>
+          </div>
+        </div>
+
+        <button
+          className={`carousel-control-prev ${style["btn-control"]}`}
+          type="button"
+          data-bs-target="#home"
+          data-bs-slide="prev"
+        >
+          <i className="bi bi-chevron-left prev-icon"></i>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className={`carousel-control-next ${style["btn-control"]}`}
+          type="button"
+          data-bs-target="#home"
+          data-bs-slide="next"
+        >
+          <i className="bi bi-chevron-right next-icon"></i>
+
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
     </>
   );

@@ -1,11 +1,9 @@
-import Navbar from "./Components/Navbar/Navbar.jsx";
-import Carosuel from "./Components/Carosuel/Carosuel.jsx";
+import Layout from "./Components/Layout/Layout.jsx";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Carosuel />
+      <Layout />
     </>
   );
 }

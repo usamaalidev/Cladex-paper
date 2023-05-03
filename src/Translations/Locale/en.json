@@ -1,0 +1,28 @@
+{
+  "navbar": ["Home", "About CLADEX", "Products", "Contact Us"],
+  "mainCarosuel": {
+    "item1": {
+      "title": "Cladex Paper",
+      "description": "This website represents all the paper grades manufactured by cladex paper. It will also show case the quality of each paper and the operational settings of each paper.      "
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "Cladex Paper",
+      "description": "Cladex Paper's website showcases all their paper grades with detailed quality and operational settings information. It's a user-friendly resource for customers looking for high-quality paper products."
+    },
+    "socialMedia": {
+      "title": "Social Links"
+    },
+    "importantLinks": {
+      "title": "Important Links",
+      "links": ["About Cladex", "Our Parteners", "Our Products", "Contact Us"]
+    },
+    "contactDetails": {
+      "title": "Quick Contact",
+      "address": "800 Fadan Badr EL Roubeky, Badr, Egypt",
+      "email": "info@cladex-paper.com",
+      "phone": "01099986330"
+    }
+  }
+}

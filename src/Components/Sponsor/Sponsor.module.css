@@ -1,0 +1,10 @@
+.sponsor-cards img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: filter 400ms, scale 400ms;
+}
+
+.sponsor-cards img:hover {
+  filter: grayscale(0%);
+  scale: 1.1;
+}

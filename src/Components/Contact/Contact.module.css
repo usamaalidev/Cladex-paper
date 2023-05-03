@@ -1,0 +1,96 @@
+/*?============> Contact <============*/
+.contact iframe {
+  width: 100%;
+  height: 21.875rem;
+}
+
+.contact [class~="details"] {
+  --gap: 0.9375rem;
+  margin-block: 1.5625rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.contact [class~="details"] > div {
+  width: calc(calc(100% - var(--gap)) / 2);
+  display: flex;
+  align-items: center;
+  padding: 1.5625rem;
+  background-color: #f1f1f1;
+}
+
+.contact [class~="details"] > div h3 {
+  color: #7d7d7d;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.contact [class~="details"] [class~="icon"] {
+  min-width: 3.125rem;
+  min-height: 3.125rem;
+  background-color: #4b93ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contact [class~="details"] [class~="icon"] i {
+  color: #f1f1f1;
+  font-size: 1.125rem;
+}
+
+.contact form {
+  --gap: 0.9375rem;
+  background-color: #f1f1f1;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1.875rem #00000014;
+  gap: var(--gap);
+}
+
+.contact form > * {
+  width: 100%;
+}
+
+.contact form :is(input, textarea) {
+  padding: 0.9375rem 0.9375rem;
+  font-family: inherit;
+  line-height: 1.5;
+  border: 2px solid #eee;
+  color: #212529;
+  transition: border-color 400ms;
+}
+
+.contact form :is(input, textarea):focus {
+  outline: none;
+  border-color: #4b93ff;
+}
+
+.contact form [class~="input-group"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.contact [class~="input-group"] input {
+  width: calc(calc(100% - var(--gap)) / 2);
+}
+
+.contact form textarea {
+  min-height: 9.375rem;
+  max-height: 18.75rem;
+  resize: vertical;
+}
+
+.contact form button[type="submit"] {
+  --padding: 0.75rem 2.5rem;
+  margin-top: 1.5625rem;
+  width: fit-content;
+  font-family: inherit;
+}

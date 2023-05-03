@@ -8,11 +8,22 @@
   width: 60px;
 }
 
-.nav select {
-  width: fit-content;
+.nav-link {
+  font-size: 19px !important ;
+  position: relative;
 }
 
-.nav select:focus {
-  outline: 0;
-  box-shadow: none;
+.nav-link::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #4b93ff;
+  bottom: 0px;
+  left: var(--bs-navbar-nav-link-padding-x);
+  position: absolute;
+  transition: width 400ms;
+}
+
+.nav-link:hover:before {
+  width: calc(100% - var(--bs-navbar-nav-link-padding-x) * 2);
 }
