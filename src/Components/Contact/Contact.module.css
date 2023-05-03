@@ -2,11 +2,12 @@
 .contact iframe {
   width: 100%;
   height: 21.875rem;
+  border: 4px solid #fff;
 }
 
 .contact [class~="details"] {
   --gap: 0.9375rem;
-  margin-block: 1.5625rem;
+  margin-block: 3.5625rem;
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap);
@@ -17,7 +18,8 @@
   display: flex;
   align-items: center;
   padding: 1.5625rem;
-  background-color: #f1f1f1;
+  background-color: #eaeaea;
+  border: 4px solid #e1e1e1;
 }
 
 .contact [class~="details"] > div h3 {
@@ -45,12 +47,9 @@
 
 .contact form {
   --gap: 0.9375rem;
-  background-color: #f1f1f1;
-  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 1.875rem #00000014;
   gap: var(--gap);
 }
 
@@ -93,4 +92,16 @@
   margin-top: 1.5625rem;
   width: fit-content;
   font-family: inherit;
+}
+
+@media (max-width: 992px) {
+  [class="input-group"] input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  [class~="details"] > div {
+    width: 100% !important;
+  }
 }

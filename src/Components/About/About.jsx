@@ -3,7 +3,9 @@ import blackAndWhiteLogo from "../../assets/images/logo-black-and-white.svg";
 import image_1 from "../../assets/images/about/img-1.png";
 import image_2 from "../../assets/images/about/img-2.png";
 import image_3 from "../../assets/images/about/img-3.png";
+import { useTranslation } from "react-i18next";
 export default function About() {
+  const [t, i18next] = useTranslation();
   return (
     <>
       <section id="about">
@@ -18,21 +20,17 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <h2 className="mb-3 fw-bold">👋 About Us</h2>
-              <p className="text-muted">
-                Cladex Paper's website showcases all our paper grades, their
-                quality, and operational settings. We're a leading manufacturer
-                committed to providing high-quality paper products and excellent
-                service. Our website offers detailed information to help you
-                make an informed decision about which paper is best for you.
-                We're transparent and responsive to our customers, and we look
-                forward to doing business with you.
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
+              <h2 className="mb-3 fw-bold">
+                👋 {t("about", { returnObjects: true }).title}
+              </h2>
+              <p className="text-muted fs-5">
+                {t("about", { returnObjects: true }).description}
               </p>
             </div>
-            <div className="col-md-6">
-              <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="row g-4 align-items-center">
                 <div className="col-md-6">
                   <img src={image_1} alt="" />
                 </div>

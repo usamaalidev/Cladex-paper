@@ -1,13 +1,16 @@
-import style from "./contact.module.css";
+import { useTranslation } from "react-i18next";
+import style from "./Contact.module.css";
 export default function Contact() {
+  const [t, i18next] = useTranslation();
   return (
     <>
-      <section id="contact" className={`${style.contact} py-4`}>
+      <section id="contact" className={`${style.contact} py-5 bg-section `}>
         <div className="container">
-          <div className="main-title">
-            <h2>CONTACT</h2>
+          <div className="main-title pb-4">
+            <h2> {t("contact", { returnObjects: true }).title}</h2>
             <p>
-              Need Help ? <span> Contact Us </span>
+              {t("contact", { returnObjects: true }).description}{" "}
+              <span>{t("contact", { returnObjects: true }).highlight} </span>
             </p>
           </div>
           <iframe
@@ -18,54 +21,110 @@ export default function Contact() {
           ></iframe>
           <div className="details">
             <div className="address">
-              <div className="icon">
-                <i className="fa-regular fa-map"></i>
+              <div className="icon mx-2">
+                <i className="bi bi-map"></i>
               </div>
               <div className="address-content">
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>
+                  {t("contact", { returnObjects: true }).details.address.title}
+                </h3>
+                <p>
+                  {t("contact", { returnObjects: true }).details.address.info}
+                </p>
               </div>
             </div>
             <div className="email">
-              <div className="icon">
-                <i className="fa-regular fa-envelope"></i>
+              <div className="icon mx-2">
+                <i className="bi bi-envelope"></i>
               </div>
               <div className="email-content">
-                <h3>Email Us</h3>
-                <a href="mailto:contact@example.com">contact@example.com </a>
+                <h3>
+                  {t("contact", { returnObjects: true }).details.email.title}
+                </h3>
+                <a
+                  href="mailto:info@cladex-paper.com"
+                  className="text-muted text-decoration-none fw-bold"
+                >
+                  {t("contact", { returnObjects: true }).details.email.info}
+                </a>
               </div>
             </div>
             <div className="phone">
-              <div className="icon">
-                <i className="fa-solid fa-phone"></i>
+              <div className="icon mx-2">
+                <i className="bi bi-telephone-fill"></i>
               </div>
               <div className="phone-content">
-                <h3>Call Us</h3>
-                <a href="tel:+1 5589 55488 55">+1 5589 55488 55 </a>
+                <h3>
+                  {" "}
+                  {t("contact", { returnObjects: true }).details.phone.title}
+                </h3>
+                <a
+                  href="tel:+201099986330"
+                  className="text-muted text-decoration-none fw-bold"
+                >
+                  {t("contact", { returnObjects: true }).details.phone.info}
+                </a>
               </div>
             </div>
             <div className="opening-hours">
-              <div className="icon">
-                <i className="fa-solid fa-share-nodes"></i>
+              <div className="icon mx-2">
+                <i className="bi bi-share-fill"></i>
               </div>
               <div className="opening-content">
-                <h3>Opening Hours</h3>
+                <h3>
+                  {t("contact", { returnObjects: true }).details.time.title}
+                </h3>
                 <p>
-                  <strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday</strong>{" "}
-                  : Closed
+                  <strong>
+                    {
+                      t("contact", { returnObjects: true }).details.time
+                        .openingDay
+                    }
+                  </strong>
+                  {t("contact", { returnObjects: true }).details.time.openTime}
+                  <strong>
+                    {
+                      t("contact", { returnObjects: true }).details.time
+                        .closingDay
+                    }
+                  </strong>
+                  {t("contact", { returnObjects: true }).details.time.closeTime}
                 </p>
               </div>
             </div>
           </div>
           <form>
             <div className="input-group">
-              <input type="text" placeholder="Your Name" name="name" />
-              <input type="email" placeholder="Your Email" name="email" />
+              <input
+                type="text"
+                placeholder={
+                  t("contact", { returnObjects: true }).placeholders.name
+                }
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder={
+                  t("contact", { returnObjects: true }).placeholders.email
+                }
+                name="email"
+              />
             </div>
-            <input type="text" placeholder="Subject" name="subject" />
-            <textarea placeholder="Message" name="message"></textarea>
+            <input
+              type="text"
+              placeholder={
+                t("contact", { returnObjects: true }).placeholders.subject
+              }
+              name="subject"
+            />
+            <textarea
+              placeholder={
+                t("contact", { returnObjects: true }).placeholders.message
+              }
+              name="message"
+            ></textarea>
             <button className="btn btn-main" type="submit">
-              Send Message
+              {t("contact", { returnObjects: true }).submit}
             </button>
           </form>
         </div>

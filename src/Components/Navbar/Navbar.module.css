@@ -27,3 +27,15 @@
 .nav-link:hover:before {
   width: calc(100% - var(--bs-navbar-nav-link-padding-x) * 2);
 }
+
+@media screen and (min-width: 992px) {
+  .nav [class~="buttons-group"] {
+    order: 2;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-link::before {
+    display: none;
+    width: 0;
+  }
+}

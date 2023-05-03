@@ -6,6 +6,61 @@
       "description": "This website represents all the paper grades manufactured by cladex paper. It will also show case the quality of each paper and the operational settings of each paper.      "
     }
   },
+  "about": {
+    "title": "About Us",
+    "description": "Cladex Paper's website showcases all our paper grades, their quality, and operational settings. We're a leading manufacturer committed to providing high-quality paper products and excellent service. Our website offers detailed information to help you make an informed decision about which paper is best for you. We're transparent and responsive to our customers, and we look forward to doing business with you."
+  },
+  "parteners" : {
+    "title": "Our", 
+    "highlight": "Parteners",
+    "description": "Our Textile Printing Paper Are Compatible With The Following Machines"
+  },
+  "products": {
+    "title": "Products",
+    "desc-part1": "Our",
+    "highlight": " featured products ",
+    "desc-part2": "include",
+    "back-card": {
+      "hover": "Hover me"
+    }, 
+    "front-card": {
+      "badge": "Cladex Paper",
+      "ourProducts": ["Food Paper", "Textile Printing Papers", "Specialty Papers", "Uncoated Paper", "Protection Paper Grades"]
+    }
+  },
+  "contact": {
+    "title": "contact",
+    "description": "Need Help ?",
+    "highlight": "Contact Us",
+    "details": {
+      "address": {
+        "title": "Our Address",
+        "info": "800 Fadan Badr EL Roubeky, Badr, Egypt"
+      },
+      "phone": {
+        "title": "Call Us",
+        "info": "+201099986330"
+      },
+      "email": {
+        "title": "Email Us",
+        "info": "info@cladex-paper.com"
+      },
+      "time": {
+        "title": "Opening Hours",
+        "openingDay": "Sat-Thu:",
+        "openTime": " 10AM - 8PM; ",
+        "closingDay": "Friday: ",
+        "closeTime": "closed"
+      }
+    }, 
+    "placeholders": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "submit": "Send Message"
+  },
   "footer": {
     "about": {
       "title": "Cladex Paper",

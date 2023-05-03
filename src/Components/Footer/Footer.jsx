@@ -8,8 +8,8 @@ export default function Footer() {
     <>
       <footer className={`${style.footer}`}>
         <div className="container px-1 py-5">
-          <div className="row">
-            <div className="col-md-4 about">
+          <div className="row g-4">
+            <div className="col-lg-4 px-4 about">
               <div className="brand d-flex gap-2 pb-3">
                 <img src={logo} alt="Cladex Paper Logo" />
                 <h3 className="fw-bolder">
@@ -25,35 +25,50 @@ export default function Footer() {
               </h3>
               <ul className="social list-unstyled d-flex flex-wrap gap-1">
                 <li>
-                  <a href="https://www.facebook.com/Cladex.Paper.Egypt">
-                    <i className="bi bi-facebook me-1"></i>
+                  <a
+                    href="https://www.facebook.com/Cladex.Paper.Egypt"
+                    className="facebook"
+                  >
+                    <i className="bi bi-facebook mx-2"></i>
                     Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Cladex.Paper.Egypt">
-                    <i className="bi bi-twitter me-1"></i> Twitter
+                  <a
+                    href="https://www.facebook.com/Cladex.Paper.Egypt"
+                    className="twitter"
+                  >
+                    <i className="bi bi-twitter mx-1"></i> Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Cladex.Paper.Egypt">
-                    <i className="bi bi-pinterest me-1"></i> Pinterest
+                  <a
+                    href="https://www.facebook.com/Cladex.Paper.Egypt"
+                    className="pinterest"
+                  >
+                    <i className="bi bi-pinterest mx-1"></i> Pinterest
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Cladex.Paper.Egypt">
-                    <i className="bi bi-youtube me-1"></i> Youtube
+                  <a
+                    href="https://www.facebook.com/Cladex.Paper.Egypt"
+                    className="youtube"
+                  >
+                    <i className="bi bi-youtube mx-1"></i> Youtube
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/Cladex.Paper.Egypt">
-                    <i className="bi bi-linkedin me-1"></i> Linkedin{" "}
+                  <a
+                    href="https://www.facebook.com/Cladex.Paper.Egypt"
+                    className="linkedin"
+                  >
+                    <i className="bi bi-linkedin mx-1"></i> Linkedin
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="col-md-4 links">
+            <div className="col-lg-4 px-4 links">
               <h3>
                 {" "}
                 {t("footer", { returnObjects: true }).importantLinks.title}
@@ -98,7 +113,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-md-4 contact-details">
+            <div className="col-lg-4 px-4 contact-details">
               <h3>
                 {t("footer", { returnObjects: true }).contactDetails.title}
               </h3>

@@ -37,19 +37,19 @@ export default function Carosuel() {
           >
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-5">
+                <div className="col-xl-5">
                   <h2 className="h1 fw-bold">
                     {t("mainCarosuel", { returnObjects: true }).item1.title}
                   </h2>
-                  <p className="lh-base text-muted">
+                  <p className="lh-base text-muted fs-5">
                     {
                       t("mainCarosuel", { returnObjects: true }).item1
                         .description
                     }
                   </p>
                 </div>
-                <div className="col-md-7">
-                  <img src={image_1} alt="" />
+                <div className="col-xl-7">
+                  <img src={image_1} />
                 </div>
               </div>
             </div>
@@ -60,25 +60,39 @@ export default function Carosuel() {
           >
             <div className="container">
               <div className="row align-items-center justify-content-between">
-                <div className="col-md-5">
+                <div className="col-xl-5">
                   <h2 className="h1 fw-bold">
                     {t("mainCarosuel", { returnObjects: true }).item1.title}
                   </h2>
-                  <p className="lh-base text-muted">
+                  <p className="lh-base text-muted fs-5">
                     {
                       t("mainCarosuel", { returnObjects: true }).item1
                         .description
                     }
                   </p>
                 </div>
-                <div className="col-md-6">
+                <div className="col-xl-7 d-flex justify-content-center">
                   <img src={image_2} alt="" />
                 </div>
               </div>
-            </div>{" "}
+            </div>
           </div>
           <div className={`carousel-item ${style.item}`}>
-            <h2>image 3</h2>
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-5">
+                  <h2 className="h1 fw-bold">
+                    {t("mainCarosuel", { returnObjects: true }).item1.title}
+                  </h2>
+                  <p className="lh-base fs-5">
+                    {
+                      t("mainCarosuel", { returnObjects: true }).item1
+                        .description
+                    }
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

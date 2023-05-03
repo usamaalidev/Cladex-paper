@@ -1,3 +1,29 @@
+:root {
+  --font-decorative: "cairo";
+}
+
 body {
+  font-family: "cairo" !important;
   direction: rtl;
+}
+
+.main-title p {
+  font-size: 37px;
+  font-weight: bold;
+}
+/* ^===========> Navbar */
+.language {
+  margin-left: 5px;
+  margin-right: 0 !important;
+}
+
+/* ^===========> Contact */
+.social {
+  direction: ltr;
+  flex-direction: row-reverse;
+}
+
+.links ul i::before {
+  rotate: 180deg;
+  margin-left: 5px;
 }

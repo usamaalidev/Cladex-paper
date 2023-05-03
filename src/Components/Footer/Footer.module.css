@@ -16,17 +16,58 @@
   padding: 7px 12px;
   display: inline-block;
   color: inherit;
+  position: relative;
+  isolation: isolate;
+}
+
+.footer [class~="social"] a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 400ms;
+  border-radius: inherit;
+}
+
+.footer [class~="social"] a[class="facebook"]::before {
+  background-color: #1877f2;
+}
+.footer [class~="social"] a[class="twitter"]::before {
+  background-color: #1da1f2;
+}
+.footer [class~="social"] a[class="pinterest"]::before {
+  background-color: #bd081c;
+}
+.footer [class~="social"] a[class="youtube"]::before {
+  background-color: #ff0000;
+}
+.footer [class~="social"] a[class="linkedin"]::before {
+  background-color: #0a66c2;
+}
+
+.footer [class~="social"] a:hover::before {
+  width: 100%;
+}
+
+.footer [class~="links"] ul li,
+.footer [class~="contact-details"] ul li {
+  border-bottom: 1px solid #333;
 }
 
 .footer [class~="links"] ul li a,
 .footer [class~="contact-details"] ul li a {
   text-decoration: none;
-  border-bottom: 1px solid #333;
+  padding-block: 10px;
   color: rgba(255, 255, 255, 0.5);
   display: block;
-  margin-bottom: 5px;
-  padding-bottom: 10px;
   transition: color 400ms;
+}
+
+.footer [class~="contact-details"] ul li span {
+  padding-block: 10px;
 }
 
 .footer [class~="links"] ul li a:hover {

@@ -1,6 +1,7 @@
 .sponsor-cards img {
   width: 100%;
   filter: grayscale(100%);
+  mix-blend-mode: multiply;
   transition: filter 400ms, scale 400ms;
 }
 

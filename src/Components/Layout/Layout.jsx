@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import Carosuel from "../Carosuel/Carosuel.jsx";
 import About from "../About/About.jsx";

@@ -27,3 +27,24 @@
   background-image: linear-gradient(#0009, #0009),
     url(../../assets/images/carosuel/at-paper-making-factory.jpg);
 }
+
+@media screen and (max-width: 1200px) {
+  .item [class="container"] {
+    width: 75% !important;
+  }
+
+  .item [class="container"] [class~="row"] {
+    gap: 40px;
+  }
+
+  .item:nth-child(2) img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item [class="container"] {
+    width: 100% !important;
+    text-align: center;
+  }
+}
