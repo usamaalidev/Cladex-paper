@@ -21,7 +21,7 @@ export default function Contact() {
           ></iframe>
           <div className="details">
             <div className="address">
-              <div className="icon mx-2">
+              <div className="icon pointer mx-2">
                 <i className="bi bi-map"></i>
               </div>
               <div className="address-content">
@@ -34,7 +34,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="email">
-              <div className="icon mx-2">
+              <div className="icon pointer mx-2">
                 <i className="bi bi-envelope"></i>
               </div>
               <div className="email-content">
@@ -50,7 +50,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="phone">
-              <div className="icon mx-2">
+              <div className="icon pointer mx-2">
                 <i className="bi bi-telephone-fill"></i>
               </div>
               <div className="phone-content">
@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="opening-hours">
-              <div className="icon mx-2">
+              <div className="icon pointer mx-2">
                 <i className="bi bi-share-fill"></i>
               </div>
               <div className="opening-content">

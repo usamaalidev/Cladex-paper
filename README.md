@@ -1,25 +1,5 @@
-## Tasks
+## Products
 
-### General tasks
-
-- [ ] arabic translation
-
-### Navbar
-
-- [ ] active Link in navbar.
-- [ ] change menu icon appearance.
-- [ ] Responsive.
-
-### Carousel
-
-- [ ] change prev and nex buttons style.
-
-### About
-
-### Sponsor
-
-### Products
-
-### Contact
-
-### Footer
+- [ ] add rtl while language is arabic.
+- [ ] prevent changing from english to arabic while reload.
+- [ ] undesirable movement of carosuel in first section.

@@ -2,24 +2,8 @@ import style from "./Navbar.module.css";
 import logo from "../../assets/images/logo.svg";
 import { useTranslation } from "react-i18next";
 
-export default function Navbar() {
+export default function Navbar({ loadRTLFile, unloadRTLFile }) {
   const [t, i18n] = useTranslation();
-
-  console.log(i18n.language);
-
-  function loadRTLFile() {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "./src/rtl.css";
-    document.head.appendChild(link);
-  }
-
-  function unloadRTLFile() {
-    const link = document.querySelector('link[href="./src/rtl.css"]');
-    if (link) {
-      link.parentNode.removeChild(link);
-    }
-  }
 
   return (
     <>
@@ -48,6 +32,7 @@ export default function Navbar() {
                 className="btn btn-sm btn-outline-primary mx-3"
                 onClick={() => {
                   i18n.changeLanguage("ar");
+                  localStorage.setItem("lang", i18n.language);
                   loadRTLFile();
                 }}
               >
@@ -61,6 +46,7 @@ export default function Navbar() {
                 className="btn btn-sm btn-outline-primary mx-3"
                 onClick={() => {
                   i18n.changeLanguage("en");
+                  localStorage.setItem("lang", i18n.language);
                   unloadRTLFile();
                 }}
               >
