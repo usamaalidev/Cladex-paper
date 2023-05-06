@@ -1,0 +1,132 @@
+body {
+  background-image: linear-gradient(
+      163deg,
+      rgba(31, 29, 43, 1) 21%,
+      rgba(31, 29, 43, 0.3113620448179272) 64%
+    ),
+    url("https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80");
+}
+
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard [class~="container"] {
+  background-color: #1f1d2b;
+  color: #808191;
+  border: 4px solid #4d4a5b;
+}
+
+/* .dashboard aside {
+  background-color: #383642;
+} */
+
+.dashboard .logo {
+  text-decoration: none;
+}
+
+.dashboard .logo img {
+  width: 40px;
+}
+.dashboard .logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.dashboard ::-webkit-scrollbar {
+  width: 10px;
+}
+.sidebar {
+  width: 220px;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition-duration: 0.2s;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar-link:hover,
+.sidebar-link[class~="is-active"] {
+  color: #fff;
+  font-weight: 600;
+}
+.sidebar-link:hover:nth-child(2n + 1) svg,
+.sidebar-link[class~="is-active"]:nth-child(2n + 1) svg {
+  background: #ff7551;
+}
+.sidebar-link:hover:nth-child(2n) svg,
+.sidebar-link[class~="is-active"]:nth-child(2n) svg {
+  background: #32a7e2;
+}
+.sidebar-link:hover:nth-child(2n + 3) svg,
+.sidebar-link[class~="is-active"]:nth-child(2n + 3) svg {
+  background: #6c5ecf;
+}
+
+@-webkit-keyframes bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.side-menu {
+  display: flex;
+  flex-direction: column;
+}
+.side-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--body-color);
+}
+.side-menu a + a {
+  margin-top: 26px;
+}
+.side-menu svg {
+  width: 30px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: var(--button-bg);
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.side-menu svg:hover {
+  color: #fff;
+}
+
+.side-title {
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  margin-bottom: 24px;
+}
+
+.side-wrapper {
+  border-bottom: 1px solid var(--border-color);
+  padding: 36px 0;
+  width: 145px;
+}
+.side-wrapper + .side-wrapper {
+  border-bottom: none;
+}

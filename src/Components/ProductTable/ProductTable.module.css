@@ -1,0 +1,11 @@
+.btn-edit:not(:disabled) {
+  background-color: #4b93ff !important;
+}
+
+:is(.btn-edit, .btn-delete):hover {
+  color: #fff !important;
+}
+
+.btn-delete:not(:disabled) {
+  background-color: var(--cp-color-danger) !important;
+}
